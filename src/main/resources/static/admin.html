@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Administration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="header" onclick="window.location='index.html';">
+    <h1>MyAuthn</h1>
+</div>
+<div class="container">
+    <h2>Admin Dashboard!</h2>
+<form id="tokenForm">
+    <label for="bearerToken">Bearer Token:</label>
+    <input type="text" id="bearerToken" name="bearerToken" required>
+    <button type="button" onclick="fetchUserData()">Fetch User Data</button>
+</form>
+</div>
+
+<div class="container" id="tableContainer" style="width: 690px;margin-top: 20px; text-align: center; justify-content: center;left: 50%; visibility: hidden">
+<table id="userTable">
+    <thead>
+    <tr>
+        <th>User ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Username</th>
+        <th>Enabled</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

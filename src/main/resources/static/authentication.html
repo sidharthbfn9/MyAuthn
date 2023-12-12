@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="header" onclick="window.location='index.html';">
+    <h1>MyAuthn</h1>
+</div>
+<div class="container">
+    <h2>Token Authentication!</h2>
+<form id="authForm">
+    <label for="token">Token:</label>
+    <input type="text" id="token" name="token" required>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="application">Application:</label>
+    <input type="text" id="application" name="application" required>
+
+    <button type="button" onclick="authenticate()">Authenticate</button>
+</form><div id="result" style="width: 100%;overflow: auto"></div></div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

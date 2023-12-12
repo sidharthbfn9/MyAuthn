@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #3498db, #8e44ad);
+}
+
+.container {
+    width: 300px;
+    text-align: center;
+    background: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth effect */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555; /* Dark gray text color */
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    transition: border 0.3s ease-in-out; /* Smooth border transition */
+}
+
+input:focus {
+    outline: none; /* Remove focus outline */
+    border: 1px solid #3498db; /* Change border color on focus */
+}
+
+button {
+    padding: 10px;
+    background: #3498db; /* Blue button background */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out; /* Smooth background transition */
+}
+
+button:hover {
+    background: #2980b9; /* Darker blue on hover */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Scale up on hover for a subtle effect */
+}
+.header {
+    /*background: #2c3e50; /* Dark background color for header */
+    color: #ecf0f1; /* Light text color for header */
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header h1 {
+    margin: 0;
+
+
+#tokenSection {
+    margin-top: 20px;
+    text-align: left;
+     max-width: 100%;
+}
+
+#jwtToken {
+    background: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+#copyButton {
+    padding: 8px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#copyButton:hover {
+    background: #2980b9;
+}
+#userTable {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#userTable th, #userTable td {
+    border: 1px solid #ddd; /* Add a 1px solid border */
+    padding: 12px;
+    text-align: left;
+}
+
+#userTable th {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#userTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#userTable input[type="checkbox"] {
+    cursor: not-allowed;
+}
+
+.navigation-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db; /* Blue color, you can change it to your preference */
+    display: block;
+    border-radius: 10px;
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login</title>
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header" onclick="window.location='index.html';">
+    <h1>MyAuthn</h1>
+</div>
+
+<!-- Login Form Section -->
+<div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="appId">App ID:</label>
+        <input type="text" id="appId" name="appId" required>
+
+        <button type="button" onclick="login()">Login</button>
+    </form>
+
+    <!-- Display JWT Token Section -->
+    <div id="tokenSection" style="display: none;">
+        <h3>JWT Token:</h3>
+        <div id="jwtToken" style="overflow: auto"></div>
+        <button id="copyButton" onclick="copyToken()">Copy Token</button>
+    </div>
+</div>
+
+<script src="login_script.js"></script>
+</body>
+</html>

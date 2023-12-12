@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Squares</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .tabs-container {
+    display: flex;
+    gap: 20px;
+}
+
+.tab {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6f61; /* Attractive coral color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: #ff4f40; /* Slightly darker coral on hover */
+}
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>MyAuthn</h1>
+</div>
+<div class="tabs-container">
+    <div class="tab" id="tab1" onclick="window.location='admin.html';">Admin Dashboard</div>
+    <div class="tab" id="tab2" onclick="window.location='registerApp.html';">Register App</div>
+    <div class="tab" id="tab3" onclick="window.location='register.html';">Register User</div>
+    <div class="tab" id="tab4" onclick="window.location='userLogin.html';">User Login</div>
+    <div class="tab" id="tab5" onclick="window.location='authentication.html';">Authenticate Token</div>
+    <div class="tab" id="tab6" onclick="window.location='userLogin.html';">Refresh Token</div>
+</div>
+</body>
+</html>
